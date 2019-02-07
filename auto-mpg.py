@@ -1,6 +1,4 @@
 '''
-@author - Jesuloba Egunjobi 100613629
-
 --- Overfit Model ---
 --Training data--
 RMSE     [4.11058074 4.94920092 5.42635058 5.85945691 4.82955358]
