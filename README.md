@@ -1,2 +1,2 @@
-# My Machine Learning Journey
+# Documentation of my Machine Learning Journey
 
