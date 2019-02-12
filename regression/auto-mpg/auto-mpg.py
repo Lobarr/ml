@@ -20,6 +20,8 @@ RMSE     6.466802527011628
 
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 from sklearn.impute import SimpleImputer 
@@ -59,7 +61,6 @@ train_set_copy = train_set.copy()
 clean_pipeline = Pipeline([
   ('imputer', SimpleImputer(strategy='mean', missing_values=0, fill_value=0)),
   ('std_scaler', StandardScaler()),
-  # ('polynomial', PolynomialFeatures(degree=2))
 ])
 
 # train_set_prepared = clean_pipeline.fit_transform(train_set['horsepower'])
@@ -112,7 +113,7 @@ non_overfit.set_xlabel('Horsepower (normalized)')
 non_overfit.grid(True)
 
 fig.subplots_adjust(hspace=.5)
-plt.savefig('auto.jpeg')
+plt.savefig('auto.png')
 # plt.show()
 
 print('--- Overfit Model ---')
